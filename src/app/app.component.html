@@ -1,0 +1,18 @@
+<form #f = "ngForm" (ngSubmit)="addData(f)">
+  <input type="text" name="name" ngModel>
+  <br>
+  <input type="email" name="email" ngModel>
+  <br>
+  <input type="password" name="password" ngModel>
+  <br>
+  <button type ="submit">Save Data</button>
+</form>
+
+<br><br><br>
+<ul>
+  <li *ngFor = "let data of userData | async">
+    {{data.name}} / {{data.email}}
+    <button (click)="updateData(data.id)">Edit</button>
+    <button (click)="deleteData(data.id)">Delete</button>
+  </li>
+</ul>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "student-database-4d2aa": {
+      "hosting": {
+        "ang-fire": [
+          "student-database-4d2aa"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "student-database-4d2aa"
+  }
+}
